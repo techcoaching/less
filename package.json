@@ -1,0 +1,25 @@
+{
+  "name": "less",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "build-less":"lessc resources\\less\\index.less resources\\css\\less.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techcoaching/less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techcoaching/less/issues"
+  },
+  "homepage": "https://github.com/techcoaching/less#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "lessc": "^1.0.2"
+  }
+}
