@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server",
-    "build-less":"lessc resources\\less\\index.less resources\\css\\less.css"
+    "build-less": "lessc resources\\less\\index.less resources\\css\\less.css"
   },
   "repository": {
     "type": "git",
