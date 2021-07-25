@@ -1,5 +1,6 @@
 /* common */
 /* page */
+/* brand */
 ul {
   margin: 5px;
   padding: 5px;
@@ -46,7 +47,26 @@ ul {
   display: inline-block;
 }
 .brand > .name {
-  margin-left: 40px;
+  margin-left: calc(37px + 3px);
+  display: inline;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.brand_toyota {
+  width: 150px;
+  position: relative;
+}
+.brand_toyota > .icon {
+  background-image: url(../images/toyota.png);
+  width: 36px;
+  height: 31px;
+  background-position: 50% 50%;
+  top: 1px;
+  position: absolute;
+  display: inline-block;
+}
+.brand_toyota > .name {
+  margin-left: calc(36px + 3px);
   display: inline;
   font-size: 32px;
   font-family: Arial, Helvetica, sans-serif;

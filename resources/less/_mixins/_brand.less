@@ -1,0 +1,21 @@
+//mixins
+.create_brand(@width,@logo, @logo_width, @logo_height){
+    width: @width;
+    position: relative;
+    // parent selector
+    & > .icon{
+        background-image: @logo;
+        width:@logo_width;
+        height: @logo_height;
+        background-position: 50% 50%;
+        top: 1px;
+        position: absolute;
+        display: inline-block;
+    }
+    & > .name{
+        margin-left: calc(@logo_width + 3px);
+        display: inline;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

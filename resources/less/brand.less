@@ -1,19 +1,18 @@
+@import "./_mixins/_brand";
 .brand{
-    width: 150px;
-    position: relative;
+    .create_brand(
+        @brand_width, 
+        @brand_logo, 
+        @brand_logo_width, 
+        @brand_logo_height
+    );
 }
-.brand > .icon{
-    background-image: url(../images/logo.png);
-    width:37px;
-    height: 36px;
-    background-position: 50% 50%;
-    top: 1px;
-    position: absolute;
-    display: inline-block;
-}
-.brand > .name{
-    margin-left: 40px;
-    display: inline;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
+
+.brand_toyota{
+    .create_brand(
+        @brand_toyota_width, 
+        @brand_toyota_logo, 
+        @brand_toyota_logo_width, 
+        @brand_toyota_logo_height
+    );
 }
